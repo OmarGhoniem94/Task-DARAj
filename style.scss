@@ -1,0 +1,377 @@
+$PrimaryColor: #0000;
+$SecondaryColor: #f58357;
+@font-face{
+    font-family: 'BoutrosAsma';
+    src: url("Fonts/BoutrosAsma.ttf");
+}
+@font-face{
+    font-family: 'GE-Flow-Bold';
+    src: url("Fonts/GE-Flow-Bold.otf");
+}
+@font-face{
+    font-family: 'GE-Flow-Regular';
+    src: url("Fonts/GE-Flow-Regular.otf");
+}
+@font-face{
+    font-family: 'Panton-LightitalicCaps';
+    src: url("Fonts/Panton-LightitalicCaps.otf");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    width: 100%;
+    position: relative;
+    background-color: white;
+    padding: 5px 15px;
+    margin-bottom: 0px;
+    .navbar-header{
+        width: 100%;
+        position: relative;
+        div.logo{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            a{
+                img{
+                    height: auto;
+                    width: 115px;
+                    padding: 2px 0px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+.items{
+    ul{
+        border: 0px;
+        text-align: right;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: "BoutrosAsma";
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .navbar{
+        .navbar-header{
+            a{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform: translateX(50%);
+                img{
+                    height: auto;
+                    width: 125px;
+                }
+            }
+            .navbar-toggle{
+                float: left;
+                margin: 0px;
+            }
+        }
+    }
+    .items{
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+        ul{
+            background-color: rgb(241,241,241,0.6);
+            margin: 0px;
+        }
+    }
+}
+.sectionParent{
+    position: relative;
+    width: 100%;
+    height: 559px;
+    background-color: whitesmoke;
+    .leftPicParent{
+        height: 559px;
+        padding-left: 0px;
+        .leftPic{
+            position: absolute;
+            bottom: 0%;
+        }
+    }
+    .paraParent{
+        height: 559px;
+        .paragraph{
+            position: absolute;
+            top: 40%;
+            h3{
+                font-family: "BoutrosAsma";
+                font-size: 25px;
+                border-right: 6px solid $SecondaryColor;
+                border-radius: 5%;
+                padding-right: 10px;
+            }
+            p{
+                font-family: "BoutrosAsma";
+                font-size: 12px;
+            }
+        }
+    }
+    .rightPicParent{
+        height: 559px;
+        padding-right: 0px;
+        .rightPic{
+            position: absolute;
+            top: 0px;
+        }
+    }
+}
+.img-resize{
+    object-fit: cover;
+    object-position: center center;
+}
+@media(max-width: 992px){
+    .sectionParent{
+        height: 540px;
+        .paraParent{
+            .paragraph{
+                position: absolute;
+                top: 35%;
+                h3{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+        .leftPicParent{
+            .leftPic{
+                bottom: 10%;
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .sectionParent{
+        height: 500px;
+        .paraParent{
+            .paragraph{
+                position: absolute;
+                top: 20%;
+                h3{
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 9px;
+                }
+            }
+        }
+        .leftPicParent{
+            .leftPic{
+                bottom: 25%;
+            }
+        }
+    }
+}
+@media(max-width: 480px){
+    .sectionParent{
+        height: 460px;
+        .paraParent{
+            .paragraph{
+                position: absolute;
+                top: 10%;
+                h3{
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+.secondSection{
+    position: relative;
+    // height: 450px;
+    .videoParent{
+        position: absolute;
+        top: 0px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .playBtn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            span::before{
+                font-size: 80px;
+                color: $SecondaryColor;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.modal-content{
+    width: 100%;
+    background-color: black;
+}
+.modal-header{
+    padding: 3px;
+    border: none;
+    background-color: black;
+}
+.backgroundVideo{
+    height: 450px;
+}
+.close{
+    color: whitesmoke;
+    opacity: 100%;
+}
+.modal-footer{
+    border-top: none;
+}
+.rdSection{
+    position: relative;
+    .thirdSection{
+        position: absolute;
+        height: 600px;
+        width: 100%;
+        top: 530px;
+        left: 0px;
+        background-color: white;
+        padding: 10px 0px;
+        .shows{
+            width: 100%;
+            height: 800px;
+            position: absolute;
+            top: 0px;
+        }
+        h2{
+            margin-right: 30px;
+            font-size: 35px;
+            font-family: "BoutrosAsma";
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .show1{
+            height: 200px;
+            // background-color: black;
+            position: absolute;
+            top: 200px;
+            right: 0px;
+            img{
+                height: auto;
+                width: 55%;
+                padding-right: 0px;
+                padding-left: 0px;
+                margin-top:10px;
+            }
+            .words{
+                ul{
+                    list-style: none;
+                    padding-right: 0px;
+                    li{
+                        color: black;
+                        font-family: "BoutrosAsma";
+                        font-size: 12px;
+                    }
+                    .title{
+                        color: white;
+                        font-size: 25px;
+                    }
+                    li{
+                        span::before{
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .show2{
+            height: 200px;
+            // background-color: black;
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-75%);
+            img{
+                height: auto;
+                width: 55%;
+                padding-right: 0px;
+                padding-left: 0px;
+                margin-top:10px;
+            }
+            .words{
+                ul{
+                    list-style: none;
+                    padding-right: 0px;
+                    li{
+                        color: black;
+                        font-family: "BoutrosAsma";
+                        font-size: 12px;
+                    }
+                    .title2{
+                        color: $SecondaryColor;
+                        font-size: 25px;
+                    }
+                    li{
+                        span::before{
+                            font-size: 25px;
+                            color: $SecondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1125px){
+    .rdSection{
+        position: relative;
+        .thirdSection{
+            position: absolute;
+            top: 480px;
+            left: 0px;
+        }
+    }
+}
+@media(max-width:992px){
+    .rdSection{
+        position: relative;
+        .thirdSection{
+            position: absolute;
+            top: 400px;
+            left: 0px;
+        }
+    }
+}
+@media(max-width:770px){
+    .rdSection{
+        position: relative;
+        .thirdSection{
+            position: absolute;
+            top: 350px;
+            left: 0px;
+        }
+    }
+}
+@media(max-width:768px){
+    .rdSection{
+        position: relative;
+        .thirdSection{
+            position: absolute;
+            top: 300px;
+            left: 0px;
+        }
+    }
+}

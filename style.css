@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "BoutrosAsma";
+  src: url("Fonts/BoutrosAsma.ttf");
+}
+@font-face {
+  font-family: "GE-Flow-Bold";
+  src: url("Fonts/GE-Flow-Bold.otf");
+}
+@font-face {
+  font-family: "GE-Flow-Regular";
+  src: url("Fonts/GE-Flow-Regular.otf");
+}
+@font-face {
+  font-family: "Panton-LightitalicCaps";
+  src: url("Fonts/Panton-LightitalicCaps.otf");
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding: 5px 15px;
+  margin-bottom: 0px;
+}
+.navbar .navbar-header {
+  width: 100%;
+  position: relative;
+}
+.navbar .navbar-header div.logo {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar .navbar-header div.logo a img {
+  height: auto;
+  width: 115px;
+  padding: 2px 0px;
+  margin-right: 0px;
+}
+
+.items ul {
+  border: 0px;
+  text-align: right;
+}
+.items ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "BoutrosAsma";
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-header a {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateX(50%);
+  }
+  .navbar .navbar-header a img {
+    height: auto;
+    width: 125px;
+  }
+  .navbar .navbar-header .navbar-toggle {
+    float: left;
+    margin: 0px;
+  }
+
+  .items {
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .items ul {
+    background-color: rgba(241, 241, 241, 0.6);
+    margin: 0px;
+  }
+}
+.sectionParent {
+  position: relative;
+  width: 100%;
+  height: 559px;
+  background-color: whitesmoke;
+}
+.sectionParent .leftPicParent {
+  height: 559px;
+  padding-left: 0px;
+}
+.sectionParent .leftPicParent .leftPic {
+  position: absolute;
+  bottom: 0%;
+}
+.sectionParent .paraParent {
+  height: 559px;
+}
+.sectionParent .paraParent .paragraph {
+  position: absolute;
+  top: 40%;
+}
+.sectionParent .paraParent .paragraph h3 {
+  font-family: "BoutrosAsma";
+  font-size: 25px;
+  border-right: 6px solid #f58357;
+  border-radius: 5%;
+  padding-right: 10px;
+}
+.sectionParent .paraParent .paragraph p {
+  font-family: "BoutrosAsma";
+  font-size: 12px;
+}
+.sectionParent .rightPicParent {
+  height: 559px;
+  padding-right: 0px;
+}
+.sectionParent .rightPicParent .rightPic {
+  position: absolute;
+  top: 0px;
+}
+
+.img-resize {
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media (max-width: 992px) {
+  .sectionParent {
+    height: 540px;
+  }
+  .sectionParent .paraParent .paragraph {
+    position: absolute;
+    top: 35%;
+  }
+  .sectionParent .paraParent .paragraph h3 {
+    font-size: 16px;
+  }
+  .sectionParent .paraParent .paragraph p {
+    font-size: 10px;
+  }
+  .sectionParent .leftPicParent .leftPic {
+    bottom: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .sectionParent {
+    height: 500px;
+  }
+  .sectionParent .paraParent .paragraph {
+    position: absolute;
+    top: 20%;
+  }
+  .sectionParent .paraParent .paragraph h3 {
+    font-size: 12px;
+  }
+  .sectionParent .paraParent .paragraph p {
+    font-size: 9px;
+  }
+  .sectionParent .leftPicParent .leftPic {
+    bottom: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .sectionParent {
+    height: 460px;
+  }
+  .sectionParent .paraParent .paragraph {
+    position: absolute;
+    top: 10%;
+  }
+  .sectionParent .paraParent .paragraph h3 {
+    font-size: 12px;
+  }
+  .sectionParent .paraParent .paragraph p {
+    font-size: 8px;
+  }
+}
+.secondSection {
+  position: relative;
+}
+.secondSection .videoParent {
+  position: absolute;
+  top: 0px;
+}
+.secondSection .videoParent img {
+  width: 100%;
+  height: auto;
+}
+.secondSection .videoParent .playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.secondSection .videoParent .playBtn span::before {
+  font-size: 80px;
+  color: #f58357;
+  cursor: pointer;
+}
+
+.modal-content {
+  width: 100%;
+  background-color: black;
+}
+
+.modal-header {
+  padding: 3px;
+  border: none;
+  background-color: black;
+}
+
+.backgroundVideo {
+  height: 450px;
+}
+
+.close {
+  color: whitesmoke;
+  opacity: 100%;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.rdSection {
+  position: relative;
+}
+.rdSection .thirdSection {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  top: 530px;
+  left: 0px;
+  background-color: white;
+  padding: 10px 0px;
+}
+.rdSection .thirdSection .shows {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 0px;
+}
+.rdSection .thirdSection h2 {
+  margin-right: 30px;
+  font-size: 35px;
+  font-family: "BoutrosAsma";
+}
+.rdSection .thirdSection img {
+  width: 100%;
+  height: auto;
+}
+.rdSection .thirdSection .show1 {
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  right: 0px;
+}
+.rdSection .thirdSection .show1 img {
+  height: auto;
+  width: 55%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+.rdSection .thirdSection .show1 .words ul {
+  list-style: none;
+  padding-right: 0px;
+}
+.rdSection .thirdSection .show1 .words ul li {
+  color: black;
+  font-family: "BoutrosAsma";
+  font-size: 12px;
+}
+.rdSection .thirdSection .show1 .words ul .title {
+  color: white;
+  font-size: 25px;
+}
+.rdSection .thirdSection .show1 .words ul li span::before {
+  font-size: 25px;
+  color: white;
+}
+.rdSection .thirdSection .show2 {
+  height: 200px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-75%);
+}
+.rdSection .thirdSection .show2 img {
+  height: auto;
+  width: 55%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+.rdSection .thirdSection .show2 .words ul {
+  list-style: none;
+  padding-right: 0px;
+}
+.rdSection .thirdSection .show2 .words ul li {
+  color: black;
+  font-family: "BoutrosAsma";
+  font-size: 12px;
+}
+.rdSection .thirdSection .show2 .words ul .title2 {
+  color: #f58357;
+  font-size: 25px;
+}
+.rdSection .thirdSection .show2 .words ul li span::before {
+  font-size: 25px;
+  color: #f58357;
+}
+
+@media (max-width: 1125px) {
+  .rdSection {
+    position: relative;
+  }
+  .rdSection .thirdSection {
+    position: absolute;
+    top: 480px;
+    left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .rdSection {
+    position: relative;
+  }
+  .rdSection .thirdSection {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+  }
+}
+@media (max-width: 770px) {
+  .rdSection {
+    position: relative;
+  }
+  .rdSection .thirdSection {
+    position: absolute;
+    top: 350px;
+    left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .rdSection {
+    position: relative;
+  }
+  .rdSection .thirdSection {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
